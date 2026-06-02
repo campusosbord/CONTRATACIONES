@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="¡Aplicación Recibida! — Instituto Osbord LLC"
+  description="Hemos recibido tu postulación. Revisaremos tu CV y nos pondremos en contacto contigo."
+>
+  <div class="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 bg-navy z-0"></div>
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/5 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-xl w-full text-center">
+      <!-- Logo -->
+      <div class="flex justify-center mb-8">
+        <img
+          src="/logo.png"
+          alt="Instituto Osbord Logo"
+          class="w-20 h-20 object-contain"
+        />
+      </div>
+
+      <!-- Content Box -->
+      <div class="glass rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <!-- Success Icon -->
+        <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gold/10 mb-6 border border-gold/20">
+          <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+
+        <h1 class="font-display font-black text-3xl sm:text-4xl text-white mb-4">
+          ¡Aplicación <span class="text-gradient-gold">Recibida!</span>
+        </h1>
+        
+        <p class="text-white/70 text-base leading-relaxed mb-8">
+          Gracias por tu interés en unirte a nuestro equipo como Closer. Hemos registrado tus datos y tu CV con éxito. Nuestro equipo revisará tu perfil detalladamente y nos pondremos en contacto contigo directamente por WhatsApp para los siguientes pasos del proceso de selección.
+        </p>
+
+        <!-- Action Button -->
+        <a
+          href="/"
+          class="group relative inline-flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-gold to-gold-300 text-navy font-bold text-base rounded-xl hover:shadow-[0_0_40px_rgba(197,160,89,0.3)] transition-all duration-500 hover:-translate-y-0.5 cursor-pointer"
+        >
+          <span>Volver al inicio</span>
+          <svg class="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
